@@ -40,7 +40,7 @@ const ParticleBackground: React.FC = () => {
       particles.length = 0;
       
       for (let i = 0; i < particleCount; i++) {
-        const colors = ['#9333EA', '#A855F7', '#C084FC', '#DDD6FE', '#E9D5FF'];
+        const colors = [`#00796B`, `#009688`, `#26A69A`, `#B2DFDB`, `#E0F7F4`];
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,

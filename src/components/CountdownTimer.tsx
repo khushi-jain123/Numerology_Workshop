@@ -52,7 +52,7 @@ const CountdownTimer: React.FC = () => {
           transition={{ delay: index * 0.1 }}
           className="text-center"
         >
-          <div className="bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg p-4 shadow-lg border border-purple-400/30">
+          <div className="bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg p-4 shadow-lg border border-teal-400/30">
             <motion.div
               key={unit.value}
               initial={{ scale: 1.2 }}

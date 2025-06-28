@@ -51,24 +51,24 @@ const TestimonialCarousel: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.5 }}
-          className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 border border-purple-500/30 shadow-2xl"
+          className="bg-gradient-to-br from-white-900 to-white-800 rounded-xl p-8 border border-teal-500/30 shadow-2xl"
         >
           <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
             <img
               src={testimonials[currentIndex].image}
               alt={testimonials[currentIndex].name}
-              className="w-20 h-20 rounded-full object-cover border-2 border-purple-500"
+              className="w-20 h-20 rounded-full object-cover border-2 border-teal-500"
             />
             <div className="flex-1 text-center md:text-left">
               <div className="flex justify-center md:justify-start mb-4">
                 {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-purple-400 fill-current" />
+                  <Star key={i} className="w-5 h-5 text-teal-400 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-300 text-lg mb-4 italic">
+              <p className="text-white-300 text-lg mb-4 italic">
                 "{testimonials[currentIndex].text}"
               </p>
-              <p className="text-purple-400 font-semibold">
+              <p className="text-teal-400 font-semibold">
                 - {testimonials[currentIndex].name}
               </p>
             </div>
@@ -78,14 +78,14 @@ const TestimonialCarousel: React.FC = () => {
 
       <button
         onClick={prevTestimonial}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-full transition-colors"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-teal-500 hover:bg-teal-600 text-white p-2 rounded-full transition-colors"
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
 
       <button
         onClick={nextTestimonial}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-full transition-colors"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-teal-500 hover:bg-teal-600 text-white p-2 rounded-full transition-colors"
       >
         <ChevronRight className="w-6 h-6" />
       </button>
@@ -96,7 +96,7 @@ const TestimonialCarousel: React.FC = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-3 h-3 rounded-full transition-colors ${
-              index === currentIndex ? 'bg-purple-500' : 'bg-gray-600'
+              index === currentIndex ? 'bg-teal-500' : 'bg-white-600'
             }`}
           />
         ))}

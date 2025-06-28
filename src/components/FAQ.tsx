@@ -41,7 +41,7 @@ const FAQ: React.FC = () => {
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="text-3xl md:text-4xl font-bold text-center text-purple-400 mb-12"
+        className="text-3xl md:text-4xl font-bold text-center text-teal-400 mb-12"
       >
         Frequently Asked Questions
       </motion.h2>
@@ -53,18 +53,18 @@ const FAQ: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1 }}
-            className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg border border-purple-500/30 overflow-hidden"
+            className="bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg border border-teal-500/30 overflow-hidden"
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-800/50 transition-colors"
+              className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-teal-600/50 transition-colors"
             >
-              <span className="text-white font-semibold">{faq.question}</span>
+              <span className="text-teal font-semibold">{faq.question}</span>
               <motion.div
                 animate={{ rotate: openIndex === index ? 180 : 0 }}
                 transition={{ duration: 0.2 }}
               >
-                <ChevronDown className="w-5 h-5 text-purple-400" />
+                <ChevronDown className="w-5 h-5 text-teal-400" />
               </motion.div>
             </button>
 
@@ -77,7 +77,7 @@ const FAQ: React.FC = () => {
                   transition={{ duration: 0.3 }}
                   className="px-6 pb-4"
                 >
-                  <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                  <p className="text-white leading-relaxed">{faq.answer}</p>
                 </motion.div>
               )}
             </AnimatePresence>
