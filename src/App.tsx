@@ -152,10 +152,27 @@ function App() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '60px 0' }}>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/t4g7TgjF-DQ?si=KwUBaN70xYCAmKQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div
+  style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '60px 0',
+  }}
+>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/t4g7TgjF-DQ?si=KwUBaN70xYCAmKQ8"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  ></iframe>
 </div>
+
+
 
 
 
@@ -497,4 +514,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
